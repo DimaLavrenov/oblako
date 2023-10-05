@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #111;
+  color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+header img {
+  width: 120px;
+}
+
+.info {
+  background-color: rgb(222, 222, 222);
+  padding: 20px;
+}
+.info h1 {
+  margin-bottom: 20px;
+}
+.info .adress {
+  display: flex;
+  align-items: flex-start;
+}
+.info .adress .place, .info .adress .contact, .info .adress .day {
+  padding: 5px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+.info .adress .place img, .info .adress .contact img, .info .adress .day img {
+  margin-right: 2px;
+}
+.info .adress div:not(:last-child) {
+  margin-right: 15px;
+}
+
+.menu {
+  padding: 20px 40px;
+  position: initial;
+  width: 100%;
+  background-color: transparent;
+}
+.menu .toggle_menu ul {
+  width: 800px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.menu .toggle_menu ul .menu_item.active {
+  background-color: rgb(173, 0, 0);
+}
+.menu .toggle_menu ul li {
+  list-style-type: none;
+  border-radius: 20px;
+  background-color: #111;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.menu .toggle_menu ul li img {
+  margin-right: 10px;
+}
+.menu .toggle_menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu .smoke_menu, .menu .tea_menu, .menu .bar_menu, .menu .drinks_menu, .menu .snacks_menu {
+  margin-top: 20px;
+}
+.menu .smoke_menu ul, .menu .tea_menu ul, .menu .bar_menu ul, .menu .drinks_menu ul, .menu .snacks_menu ul {
+  display: flex;
+  align-items: center;
+}
+.menu .smoke_menu ul li, .menu .tea_menu ul li, .menu .bar_menu ul li, .menu .drinks_menu ul li, .menu .snacks_menu ul li {
+  list-style-type: none;
+  border-radius: 20px;
+  background-color: #111;
+  padding: 5px 10px;
+}
+.menu .smoke_menu ul li a, .menu .tea_menu ul li a, .menu .bar_menu ul li a, .menu .drinks_menu ul li a, .menu .snacks_menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu .smoke_menu ul li:not(:last-child), .menu .tea_menu ul li:not(:last-child), .menu .bar_menu ul li:not(:last-child), .menu .drinks_menu ul li:not(:last-child), .menu .snacks_menu ul li:not(:last-child) {
+  margin-right: 20px;
+}
+.menu .smoke_menu.hidden, .menu .tea_menu.hidden, .menu .bar_menu.hidden, .menu .drinks_menu.hidden, .menu .snacks_menu.hidden {
+  display: none;
+}
+.menu .smoke_menu.active, .menu .tea_menu.active, .menu .bar_menu.active, .menu .drinks_menu.active, .menu .snacks_menu.active {
+  display: flex;
+}
+
+.menu.hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 4px 10px rgb(181, 181, 181);
+}
+
+.selector {
+  padding: 0px 20px;
+}
+.selector ul li {
+  list-style-type: none;
+}
+.selector ul li h4 {
+  margin: 20px 0px 10px 0px;
+}
+.selector ul li .item_menu {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 10px 10px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.selector ul li .item_menu:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.selector.hidden {
+  display: none;
+}
+
+.selector.mt20 {
+  margin-top: 129.33px;
+}/*# sourceMappingURL=style.css.map */

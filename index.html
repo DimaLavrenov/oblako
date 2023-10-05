@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Oblako</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+        <div class="rules">Правила заведения</div>
+    </header>
+    <div class="info">
+        <h1>Oblako Lounge bar Krasnoyarsk</h1>
+        <div class="adress">
+            <div class="place">
+                <div><img src="./images/place.png" alt="adress"></div>
+                <p>Адрес</p>
+            </div>
+            <div class="contact">
+                <div><img src="./images/info.png" alt="info"></div>
+                <p>Контакты</p>
+            </div>
+            <div class="day">
+                <div><img src="./images/time.png" alt="time"></div>
+                <div>
+                    <p class="day_of_week">Понедельник</p>
+                    <p class="opening_hours">14:00 - 02:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="toggle_menu">
+            <ul class="list_items">
+                <li class="menu_item smoke active">
+                    <a class="smoke" href="#">💨 Дымное меню</a>
+                </li>
+                <li class="menu_item tea">
+                    <a class="tea" href="#">🍵 Чайная карта</a>
+                </li>
+                <li class="menu_item bar">
+                    <a class="bar" href="#">🍷 Бар</a>
+                </li>
+                <li class="menu_item drinks">
+                    <a class="drinks" href="#">🍹 Напитки</a>
+                </li>
+                <li class="menu_item snacks">
+                    <a class="snacks" href="#">🍫 Закуски</a>
+                </li>
+            </ul>
+        </div>
+        <div class="add_menu">
+            <div class="add_menu smoke_menu active">
+                <ul>
+                    <li><a class="anchor-hash-header" href="sell">Акция</a></li>
+                    <li><a class="anchor-hash-header" href="classic">Классический</a></li>
+                    <li><a class="anchor-hash-header" href="author">Авторский</a></li>
+                    <li><a class="anchor-hash-header" href="fruit">Фруктовый</a></li>
+                </ul>
+            </div>
+            <div class="add_menu tea_menu hidden">
+                <ul>
+                    <li><a class="anchor-hash-header" href="black">Черный</a></li>
+                    <li><a class="anchor-hash-header" href="green">Зеленый</a></li>
+                    <li><a class="anchor-hash-header" href="red">Красный</a></li>
+                    <li><a class="anchor-hash-header" href="puer">Пуэр</a></li>
+                    <li><a class="anchor-hash-header" href="authors">Авторский</a></li>
+                </ul>
+            </div>
+            <div class="add_menu bar_menu hidden">
+                <ul>
+                    <li><a class="anchor-hash-header" href="authorss">Авторские коктейли</a></li>
+                    <li><a class="anchor-hash-header" href="shot">Шоты</a></li>
+                    <li><a class="anchor-hash-header" href="classicss">Классические коктейли</a></li>
+                    <li><a class="anchor-hash-header" href="sparking">Игристое вино</a></li>
+                    <li><a class="anchor-hash-header" href="wine">Вино</a></li>
+                    <li><a class="anchor-hash-header" href="rum">Ром</a></li>
+                    <li><a class="anchor-hash-header" href="vodka">Водка</a></li>
+                    <li><a class="anchor-hash-header" href="gin">Джин</a></li>
+                    <li><a class="anchor-hash-header" href="whiskey">Виски</a></li>
+                    <li><a class="anchor-hash-header" href="beer">Пиво</a></li>
+                    <li><a class="anchor-hash-header" href="tequila">Текила</a></li>
+                    <li><a class="anchor-hash-header" href="bourbon">Бурбон</a></li>
+                    <li><a class="anchor-hash-header" href="brandy">Бренди</a></li>
+                    <li><a class="anchor-hash-header" href="liquor">Ликер</a></li>
+                </ul>
+            </div>
+            <div class="add_menu drinks_menu hidden">
+                <ul>
+                    <li><a class="anchor-hash-header" href="soda">Газированная вода</a></li>
+                    <li><a class="anchor-hash-header" href="cold_tea">Холодный чай</a></li>
+                    <li><a class="anchor-hash-header" href="juice">Сок</a></li>
+                    <li><a class="anchor-hash-header" href="energy">Энергетики</a></li>
+                    <li><a class="anchor-hash-header" href="lemonade">Лимонады</a></li>
+                </ul>
+            </div>
+            <div class="add_menu snacks_menu hidden">
+                <ul>
+                    <li><a class="anchor-hash-header" href="dessert">Сладкое</a></li>
+                    <li><a class="anchor-hash-header" href="snacks">Закуски</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="selector">
+        <div class="selector smoke active">
+            <ul>
+                <li class="anchor-hash-content" href="sell">
+                    <h4>Акция с 14:00 до 18:00</h4>
+                    <div class="item_menu">
+                        <div class="title">Классический кальян + листовой чай</div>
+                        <div class="info_item">
+                            <p>700 p</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="classic">
+                    <h4>Классический</h4>
+                    <div class="item_menu">
+                        <div class="title">Классический кальян</div>
+                        <div class="info_item">
+                            <p>1000 p</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="author">
+                    <h4>Авторский</h4>
+                    <div class="item_menu">
+                        <div class="title">Авторский кальян</div>
+                        <div class="info_item">
+                            <p>1500 p</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="fruit">
+                    <h4>На фрукте</h4>
+                    <div class="item_menu">
+                        <div class="title">Кальян на фрукте</div>
+                        <div class="info_item">
+                            <p>1600 p</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="selector tea hidden">
+            <ul>
+                <li class="anchor-hash-content" href="black">
+                    <h4>Черный чай</h4>
+                    <div class="item_menu">
+                        <div class="title">Ассам</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Чебрец с мятой</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Эрл грей</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="green">
+                    <h4>Зеленый чай</h4>
+                    <div class="item_menu">
+                        <div class="title">Моргентау</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Сенча</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Молочный улун</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">С жасмином</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Травяной</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="red">
+                    <h4>Красный чай</h4>
+                    <div class="item_menu">
+                        <div class="title">Наглый фрукт</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="puer">
+                    <h4>Пуэр</h4>
+                    <div class="item_menu">
+                        <div class="title">Классический</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Рисовый</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="authors">
+                    <h4>Авторский чай</h4>
+                    <div class="item_menu">
+                        <div class="title">Киви-лайм (зеленый чай)</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>800 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Малина смородина (красный чай)</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>800 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Облепиховый с лимоном и медом (черный чай)</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>800 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Апельсин-лайм (черный чай)</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>800 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Манго-маракуйя, корица (зеленый чай)</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>800 мл</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="selector bar hidden">
+            <ul>
+                <li class="anchor-hash-content" href="authorss">
+                    <h4>Авторские коктейли</h4>
+                    <div class="item_menu">
+                        <div class="title">Лавандовый спритц</div>
+                        <div class="info_item">
+                            <p>380 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Лимонный пирог</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">ICE TEA</div>
+                        <div class="info_item">
+                            <p>360 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Шарлотта</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Банановый шок</div>
+                        <div class="info_item">
+                            <p>390 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Ягодный сауэр</div>
+                        <div class="info_item">
+                            <p>380 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Облако</div>
+                        <div class="info_item">
+                            <p>390 p</p>
+                            <p>900 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="shot">
+                    <h4>Шоты</h4>
+                    <div class="item_menu">
+                        <div class="title">Тропический</div>
+                        <div class="info_item">
+                            <p>550 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Апельсиновый</div>
+                        <div class="info_item">
+                            <p>550 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Вишневый</div>
+                        <div class="info_item">
+                            <p>550 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="classicss">
+                    <h4>Классические коктейли</h4>
+                    <div class="item_menu">
+                        <div class="title">Мартини фиеро-тоник</div>
+                        <div class="info_item">
+                            <p>320 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Мартини бьянко-тоник</div>
+                        <div class="info_item">
+                            <p>320 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Вильям лоусонс кола</div>
+                        <div class="info_item">
+                            <p>300 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Бомбей тоник</div>
+                        <div class="info_item">
+                            <p>450 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Бакарди спайсд кола</div>
+                        <div class="info_item">
+                            <p>340 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Маргарита</div>
+                        <div class="info_item">
+                            <p>380 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Негрони</div>
+                        <div class="info_item">
+                            <p>400 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Лонг айленд</div>
+                        <div class="info_item">
+                            <p>400 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Том коллинз</div>
+                        <div class="info_item">
+                            <p>350 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Апероль спритц</div>
+                        <div class="info_item">
+                            <p>490 p</p>
+                            <p>6*50 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="sparking">
+                    <h4>Игристое вино</h4>
+                    <div class="item_menu">
+                        <div class="title">Мартини асти D.O.C.G</div>
+                        <div class="info_item">
+                            <p>790 р / 2790 р</p>
+                            <p>187 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Мартини просеко D.O.C</div>
+                        <div class="info_item">
+                            <p>790 р / 2790 р</p>
+                            <p>187 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Мартини просеко розе D.O.C</div>
+                        <div class="info_item">
+                            <p>2790 р</p>
+                            <p>750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Каватина ламбрумко бьянко</div>
+                        <div class="info_item">
+                            <p>1800 р</p>
+                            <p>750 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="wine">
+                    <h4>Вино</h4>
+                    <div class="item_menu">
+                        <div class="title">Гран бульвар</div>
+                        <div class="info_item">
+                            <p>380 р / 1900 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Каватино пино гриджо</div>
+                        <div class="info_item">
+                            <p>410 р / 2000 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Винапенья айрен</div>
+                        <div class="info_item">
+                            <p>370 р / 1800 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Винапенья темпранильо</div>
+                        <div class="info_item">
+                            <p>370 р / 1800 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Вайнхаус шнайдер рислинг</div>
+                        <div class="info_item">
+                            <p>450 р / 2200 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Вестерн селларс зинфандель розе</div>
+                        <div class="info_item">
+                            <p>460 р / 2300 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Киндзмараули серия дзвели</div>
+                        <div class="info_item">
+                            <p>390 р / 1900 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Алазанская долина серия дзвели</div>
+                        <div class="info_item">
+                            <p>370 р / 1800 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Саперави серия дзвели</div>
+                        <div class="info_item">
+                            <p>370 р / 1800 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Хоровац</div>
+                        <div class="info_item">
+                            <p>460 р / 2300 р</p>
+                            <p>150 мл / 750 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="rum">
+                    <h4>Ром</h4>
+                    <div class="item_menu">
+                        <div class="title">Bacardi carta blanca</div>
+                        <div class="info_item">
+                            <p>280 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Bacardi spiced</div>
+                        <div class="info_item">
+                            <p>280 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Cayo grande club</div>
+                        <div class="info_item">
+                            <p>260 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="vodka">
+                    <h4>Водка</h4>
+                    <div class="item_menu">
+                        <div class="title">Онегин</div>
+                        <div class="info_item">
+                            <p>260 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Absolut</div>
+                        <div class="info_item">
+                            <p>320 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Белая березка</div>
+                        <div class="info_item">
+                            <p>150 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="gin">
+                    <h4>Джин</h4>
+                    <div class="item_menu">
+                        <div class="title">Bombay sapphire</div>
+                        <div class="info_item">
+                            <p>400 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Barrister dry</div>
+                        <div class="info_item">
+                            <p>200 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="whiskey">
+                    <h4>Виски</h4>
+                    <div class="item_menu">
+                        <div class="title">William lawson's</div>
+                        <div class="info_item">
+                            <p>250 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Dewar's 8 y.o. caribbean</div>
+                        <div class="info_item">
+                            <p>330 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Jameson</div>
+                        <div class="info_item">
+                            <p>450 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Famous grouse</div>
+                        <div class="info_item">
+                            <p>310 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Black ram</div>
+                        <div class="info_item">
+                            <p>300 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="beer">
+                    <h4>Пиво</h4>
+                    <div class="item_menu">
+                        <div class="title">Купец светлое</div>
+                        <div class="info_item">
+                            <p>220 р</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Купец классическое</div>
+                        <div class="info_item">
+                            <p>220 р</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Briman hoppy pilsner</div>
+                        <div class="info_item">
+                            <p>240 р</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Ministrell blanch</div>
+                        <div class="info_item">
+                            <p>280 р</p>
+                            <p>330 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Briman kriek cherry</div>
+                        <div class="info_item">
+                            <p>260 р</p>
+                            <p>330 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Briman red alert ale</div>
+                        <div class="info_item">
+                            <p>250 р</p>
+                            <p>330 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Briman weissbeer</div>
+                        <div class="info_item">
+                            <p>200 р</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Briman pear poire</div>
+                        <div class="info_item">
+                            <p>240 р</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="tequila">
+                    <h4>Текила</h4>
+                    <div class="item_menu">
+                        <div class="title">Tres sombreros</div>
+                        <div class="info_item">
+                            <p>300 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Omleca</div>
+                        <div class="info_item">
+                            <p>380 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="bourbon">
+                    <h4>Бурбон</h4>
+                    <div class="item_menu">
+                        <div class="title">Jim beam</div>
+                        <div class="info_item">
+                            <p>350 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="brandy">
+                    <h4>Бренди</h4>
+                    <div class="item_menu">
+                        <div class="title">Арарат 3*</div>
+                        <div class="info_item">
+                            <p>280 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="liquor">
+                    <h4>Ликер</h4>
+                    <div class="item_menu">
+                        <div class="title">Ягермайстер айс шот</div>
+                        <div class="info_item">
+                            <p>300 р</p>
+                            <p>40 мл</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="selector drinks hidden">
+            <ul>
+                <li class="anchor-hash-content" href="soda">
+                    <h4>Газированная вода</h4>
+                    <div class="item_menu">
+                        <div class="title">Coca-cola</div>
+                        <div class="info_item">
+                            <p>100 p / 150 р</p>
+                            <p>500 мл / 1000 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Rich tonik</div>
+                        <div class="info_item">
+                            <p>100 p</p>
+                            <p>330 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Bonaqua</div>
+                        <div class="info_item">
+                            <p>100 p</p>
+                            <p>500 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="cold_tea">
+                    <h4>Холодный чай</h4>
+                    <div class="item_menu">
+                        <div class="title">Rich tea</div>
+                        <div class="info_item">
+                            <p>100 p</p>
+                            <p>500 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="juice">
+                    <h4>Сок</h4>
+                    <div class="item_menu">
+                        <div class="title">Pulpy</div>
+                        <div class="info_item">
+                            <p>100 p</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Rich</div>
+                        <div class="info_item">
+                            <p>120 p</p>
+                            <p>300 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="energy">
+                    <h4>Энергетики</h4>
+                    <div class="item_menu">
+                        <div class="title">Burn</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Monster</div>
+                        <div class="info_item">
+                            <p>180 p</p>
+                            <p>450 мл</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="lemonade">
+                    <h4>Лимонады</h4>
+                    <div class="item_menu">
+                        <div class="title">Голубая лагуна</div>
+                        <div class="info_item">
+                            <p>180 p / 450 р</p>
+                            <p>300 мл / 1000 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Манго-маракуйя</div>
+                        <div class="info_item">
+                            <p>180 p / 450 р</p>
+                            <p>300 мл / 1000 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Клубничный мохито</div>
+                        <div class="info_item">
+                            <p>180 p / 450 р</p>
+                            <p>300 мл / 1000 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Пина колада</div>
+                        <div class="info_item">
+                            <p>180 p / 450 р</p>
+                            <p>300 мл / 1000 мл</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Лавандовый</div>
+                        <div class="info_item">
+                            <p>180 p / 450 р</p>
+                            <p>300 мл / 1000 мл</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="selector snacks hidden">
+            <ul>
+                <li class="anchor-hash-content" href="dessert">
+                    <h4>Сладкое</h4>
+                    <div class="item_menu">
+                        <div class="title">Батончик</div>
+                        <div class="info_item">
+                            <p>100 p</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Milka</div>
+                        <div class="info_item">
+                            <p>200 p</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Ritter sport</div>
+                        <div class="info_item">
+                            <p>250 p</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="anchor-hash-content" href="snacks">
+                    <h4>Закуски</h4>
+                    <div class="item_menu">
+                        <div class="title">Снеки</div>
+                        <div class="info_item">
+                            <p>140 p</p>
+                            <p>100 гр</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Сыр косичка</div>
+                        <div class="info_item">
+                            <p>170 p</p>
+                            <p>100 гр</p>
+                        </div>
+                    </div>
+                    <div class="item_menu">
+                        <div class="title">Lays</div>
+                        <div class="info_item">
+                            <p>140 p</p>
+                            <p>81 гр</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
