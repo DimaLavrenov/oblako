@@ -55,7 +55,9 @@ header .rules .review:hover {
   align-items: flex-start;
   flex-direction: column;
 }
-.info .adress .place, .info .adress .contact, .info .adress .day {
+.info .adress .place,
+.info .adress .contact,
+.info .adress .day {
   padding: 8px 15px;
   border: 2px solid gold;
   border-radius: 26px;
@@ -63,13 +65,17 @@ header .rules .review:hover {
   display: flex;
   align-items: center;
 }
-.info .adress .place a, .info .adress .contact a, .info .adress .day a {
+.info .adress .place a,
+.info .adress .contact a,
+.info .adress .day a {
   text-decoration: none;
   color: #fff;
   display: flex;
   align-items: center;
 }
-.info .adress .place img, .info .adress .contact img, .info .adress .day img {
+.info .adress .place img,
+.info .adress .contact img,
+.info .adress .day img {
   margin-right: 5px;
 }
 .info .adress div:not(:last-child) {
@@ -107,31 +113,59 @@ header .rules .review:hover {
   font-weight: 600;
   text-decoration: none;
 }
-.menu .smoke_menu, .menu .tea_menu, .menu .bar_menu, .menu .drinks_menu, .menu .snacks_menu {
+.menu .smoke_menu,
+.menu .tea_menu,
+.menu .bar_menu,
+.menu .drinks_menu,
+.menu .snacks_menu {
   margin-top: 20px;
 }
-.menu .smoke_menu ul, .menu .tea_menu ul, .menu .bar_menu ul, .menu .drinks_menu ul, .menu .snacks_menu ul {
+.menu .smoke_menu ul,
+.menu .tea_menu ul,
+.menu .bar_menu ul,
+.menu .drinks_menu ul,
+.menu .snacks_menu ul {
   display: flex;
   align-items: center;
 }
-.menu .smoke_menu ul li, .menu .tea_menu ul li, .menu .bar_menu ul li, .menu .drinks_menu ul li, .menu .snacks_menu ul li {
+.menu .smoke_menu ul li,
+.menu .tea_menu ul li,
+.menu .bar_menu ul li,
+.menu .drinks_menu ul li,
+.menu .snacks_menu ul li {
   list-style-type: none;
   border-radius: 20px;
   background-color: #111;
   padding: 6px 12px;
   font-weight: 600;
 }
-.menu .smoke_menu ul li a, .menu .tea_menu ul li a, .menu .bar_menu ul li a, .menu .drinks_menu ul li a, .menu .snacks_menu ul li a {
+.menu .smoke_menu ul li a,
+.menu .tea_menu ul li a,
+.menu .bar_menu ul li a,
+.menu .drinks_menu ul li a,
+.menu .snacks_menu ul li a {
   color: #fff;
   text-decoration: none;
 }
-.menu .smoke_menu ul li:not(:last-child), .menu .tea_menu ul li:not(:last-child), .menu .bar_menu ul li:not(:last-child), .menu .drinks_menu ul li:not(:last-child), .menu .snacks_menu ul li:not(:last-child) {
+.menu .smoke_menu ul li:not(:last-child),
+.menu .tea_menu ul li:not(:last-child),
+.menu .bar_menu ul li:not(:last-child),
+.menu .drinks_menu ul li:not(:last-child),
+.menu .snacks_menu ul li:not(:last-child) {
   margin-right: 15px;
 }
-.menu .smoke_menu.hidden, .menu .tea_menu.hidden, .menu .bar_menu.hidden, .menu .drinks_menu.hidden, .menu .snacks_menu.hidden {
+.menu .smoke_menu.hidden,
+.menu .tea_menu.hidden,
+.menu .bar_menu.hidden,
+.menu .drinks_menu.hidden,
+.menu .snacks_menu.hidden {
   display: none;
 }
-.menu .smoke_menu.active, .menu .tea_menu.active, .menu .bar_menu.active, .menu .drinks_menu.active, .menu .snacks_menu.active {
+.menu .smoke_menu.active,
+.menu .tea_menu.active,
+.menu .bar_menu.active,
+.menu .drinks_menu.active,
+.menu .snacks_menu.active {
   display: flex;
 }
 
@@ -181,11 +215,20 @@ header .rules .review:hover {
   display: none;
 }
 
-.selector.mt20 {
+.selector.mt320 {
   margin-top: 129.33px;
 }
 
-.rules_modal, .review_modal {
+.selector.mt375 {
+  margin-top: 153px;
+}
+
+.selector.mt768 {
+  margin-top: 150px;
+}
+
+.rules_modal,
+.review_modal {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.473);
   height: 100vh;
@@ -198,52 +241,256 @@ header .rules .review:hover {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-.rules_modal .content, .review_modal .content {
+.rules_modal .content,
+.review_modal .content {
   background-color: rgb(0, 0, 0);
   padding: 40px;
   border-radius: 15px;
   color: #fff;
   border: 2px solid gold;
 }
-.rules_modal .content h3, .review_modal .content h3 {
+.rules_modal .content h3,
+.review_modal .content h3 {
   font-size: 40px;
   margin-bottom: 50px;
 }
-.rules_modal .content .item, .review_modal .content .item {
+.rules_modal .content .item,
+.review_modal .content .item {
   margin-top: 30px;
   width: 600px;
 }
-.rules_modal .content .item h4, .review_modal .content .item h4 {
+.rules_modal .content .item h4,
+.review_modal .content .item h4 {
   font-size: 25px;
 }
-.rules_modal .content .item p, .review_modal .content .item p {
+.rules_modal .content .item p,
+.review_modal .content .item p {
   font-size: 18px;
   font-weight: 600;
   color: #b2b2b2;
   margin-top: 5px;
 }
-.rules_modal .content .social, .review_modal .content .social {
+.rules_modal .content .social,
+.review_modal .content .social {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.rules_modal .content .social a, .review_modal .content .social a {
+.rules_modal .content .social a,
+.review_modal .content .social a {
   text-decoration: none;
 }
-.rules_modal .content .social h4, .review_modal .content .social h4 {
+.rules_modal .content .social h4,
+.review_modal .content .social h4 {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   color: #fff;
 }
-.rules_modal .content .social a:not(:last-child), .review_modal .content .social a:not(:last-child) {
+.rules_modal .content .social a:not(:last-child),
+.review_modal .content .social a:not(:last-child) {
   margin-right: 50px;
 }
-.rules_modal .content .social img, .review_modal .content .social img {
+.rules_modal .content .social img,
+.review_modal .content .social img {
   width: 150px;
 }
 
-.rules_modal.active, .review_modal.active {
+.rules_modal.active,
+.review_modal.active {
   display: flex;
+}
+
+@media screen and (min-width: 320px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 10px 20px 10px;
+  }
+  .flex_1 {
+    flex-direction: column;
+  }
+  .flex_1 .place {
+    margin-bottom: 15px;
+  }
+  .menu {
+    padding: 20px;
+  }
+  .menu .toggle_menu {
+    overflow-y: scroll;
+  }
+  .menu .add_menu {
+    overflow-y: scroll;
+  }
+  .selector {
+    padding: 0px;
+  }
+  .freddie {
+    padding: 0px 20px 20px 20px;
+  }
+  .selector ul li .item_menu .info_item {
+    width: 60%;
+    font-size: 14px;
+  }
+  .rules_modal .content,
+  .review_modal .content {
+    padding: 20px;
+  }
+  .rules_modal .content h3,
+  .review_modal .content h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .rules_modal .content .item,
+  .review_modal .content .item {
+    width: 250px;
+    margin-top: 20px;
+  }
+  .rules_modal .content .item h4,
+  .review_modal .content .item h4 {
+    font-size: 17px;
+  }
+  .rules_modal .content .item p,
+  .review_modal .content .item p {
+    font-size: 16px;
+  }
+  .rules_modal .content .social,
+  .review_modal .content .social {
+    flex-direction: column;
+  }
+  .rules_modal .content h3,
+  .review_modal .content h3 {
+    text-align: center;
+  }
+  .review_modal .content .social a:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+  .rules_modal .content .social img,
+  .review_modal .content .social img {
+    width: 100px;
+  }
+  .rules_modal .content .social a,
+  .review_modal .content .social a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .review_modal .content {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .rules_modal .content h3,
+  .review_modal .content h3 {
+    font-size: 25px;
+  }
+  .rules_modal .content .item,
+  .review_modal .content .item {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .rules_modal .content h3,
+  .review_modal .content h3 {
+    font-size: 25px;
+  }
+  .rules_modal .content .item,
+  .review_modal .content .item {
+    width: 350px;
+    margin-top: 25px;
+  }
+  .rules_modal .content .item h4,
+  .review_modal .content .item h4 {
+    font-size: 20px;
+  }
+  .rules_modal .content .item p,
+  .review_modal .content .item p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 660px) {
+  header {
+    flex-direction: row;
+    padding: 0px 20px;
+  }
+  .selector ul li .item_menu .info_item {
+    width: auto;
+    font-size: 16px;
+  }
+  .info .adress {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rules_modal .content h3,
+  .review_modal .content h3 {
+    font-size: 30px;
+  }
+  .rules_modal .content .item h4,
+  .review_modal .content .item h4 {
+    font-size: 22px;
+  }
+  .rules_modal .content .item,
+  .review_modal .content .item {
+    width: 550px;
+  }
+  .rules_modal .content .social,
+  .review_modal .content .social {
+    flex-direction: row;
+  }
+  .review_modal .content .social a:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+  }
+  .review_modal .content {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 0px 40px;
+  }
+  .info {
+    padding: 20px 40px;
+  }
+  .menu {
+    padding: 20px 40px;
+  }
+  .freddie {
+    padding: 0px 40px 40px 40px;
+  }
+  .rules_modal .content .social img,
+  .review_modal .content .social img {
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .rules_modal .content h3,
+  .review_modal .content h3 {
+    font-size: 40px;
+  }
+  .rules_modal .content .item h4,
+  .review_modal .content .item h4 {
+    font-size: 30px;
+  }
+  .rules_modal .content .item p,
+  .review_modal .content .item p {
+    font-size: 24px;
+  }
+  .rules_modal .content .item,
+  .review_modal .content .item {
+    width: 1000px;
+  }
+  .rules_modal .content,
+  .review_modal .content {
+    padding: 40px;
+  }
+  .rules_modal .content .social img,
+  .review_modal .content .social img {
+    width: 150px;
+  }
+  .review_modal .content {
+    width: 700px;
+  }
 }/*# sourceMappingURL=style.css.map */
