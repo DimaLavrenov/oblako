@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #3e3e3e;
+    overflow-y: auto;
+}
+
+body.modal_open{
+    overflow: hidden;
 }
 
 header{
     width: 100%;
     height: 80px;
-    background-color: #111;
+    background-color: #000;
     color: gold;
     display: flex;
     align-items: center;
@@ -15,12 +26,27 @@ header{
     padding: 0px 20px;
 
     img{
-        width: 120px;
+        width: 100px;
+    }
+
+    .rules{
+        display: flex;
+        font-weight: 600;
+        div:first-child{
+            margin-right: 15px;
+        }
+        .rules_of_build:hover{
+            cursor: pointer;
+        }
+        .review:hover{
+            cursor: pointer;
+        }
     }
 }
 
 .info{
-    background-color: rgb(222, 222, 222);
+    background-color: #111;
+    color: #fff;
     padding: 20px;
 
     h1{
@@ -30,15 +56,25 @@ header{
     .adress{
         display: flex;
         align-items: flex-start;
+        flex-direction: column;
 
         .place, .contact, .day{
-            padding: 5px;
-            border: 2px solid black;
+            padding: 8px 15px;
+            border: 2px solid gold;
+            border-radius: 26px;
+            font-weight: 600;
             display: flex;
             align-items: center;
 
+            a{
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                align-items: center;
+            }
+
             img{
-                margin-right: 2px;
+                margin-right: 5px;
             }
         }
 
@@ -60,7 +96,8 @@ header{
         align-items: center;
 
         .menu_item.active{
-            background-color: rgb(173, 0, 0);
+            background-color: rgb(160, 160, 160);
+            box-shadow: 0px 0px 20px rgb(88, 88, 88);
         }
 
         li{
@@ -74,6 +111,7 @@ header{
             }
             a{
                 color: #fff;
+                font-weight: 600;
                 text-decoration: none;
             }
         }
@@ -87,7 +125,8 @@ header{
                 list-style-type: none;
                 border-radius: 20px;
                 background-color: #111;
-                padding: 5px 10px;
+                padding: 6px 12px;
+                font-weight: 600;
 
                 a{
                     color: #fff;
@@ -95,7 +134,7 @@ header{
                 }
             }
             li:not(:last-child){
-                margin-right: 20px;
+                margin-right: 15px;
             }
         }
     }
@@ -111,8 +150,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
-    box-shadow: 2px 4px 10px rgb(181, 181, 181);
+    background-color: #878787;
+    box-shadow: 2px 4px 20px rgb(0, 0, 0);
 }
 
 .selector {
@@ -121,14 +160,28 @@ header{
         list-style-type: none;
         h4{
             margin: 20px 0px 10px 0px;
+            font-size: 20px;
+            color: #fff;
         }
         .item_menu{
-            background-color: antiquewhite;
+            background-color: #111;
             border-radius: 10px;
             padding: 10px 10px;
             justify-content: space-between;
             display: flex;
             align-items: center;
+            color: #fff;
+            font-weight: 600;
+            height: 60px;
+            .info_item{
+                text-align: right;
+
+                p:nth-child(even){
+                    font-size: 12px;
+                    margin-top: 4px;
+                    color: #b2b2b2;
+                }
+            }
         }
         .item_menu:not(:last-child){
             margin-bottom: 20px;
@@ -140,4 +193,71 @@ header{
 }
 .selector.mt20{
     margin-top: 129.33px;
+}
+
+$width: 200px;
+$height: 200px;
+
+.rules_modal, .review_modal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .content{
+        background-color: rgb(0, 0, 0);
+        padding: 40px;
+        border-radius: 15px;
+        color: #fff;
+        border: 2px solid gold;
+        h3{
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+        .item{
+            margin-top: 30px;
+            width: 600px;
+            h4{
+                font-size: 25px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 600;
+                color: #b2b2b2;
+                margin-top: 5px;
+            }
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                text-decoration: none;   
+            }
+            h4{
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                color: #fff;
+            }
+            a:not(:last-child){
+                margin-right: 50px;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
+
+.rules_modal.active, .review_modal.active{
+    display: flex;
 }

@@ -110,7 +110,6 @@ let selector = document.querySelector(".selector")
 
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
-    console.log(Math.round(scrollPosition));
 
     if(scrollPosition > 224){
         menu.classList.add("hidden")
@@ -170,3 +169,34 @@ if(day == 1 || day == 2 && hourss < 2){
     dayWeek.innerText = 'Воскресенье'
     hours.innerText = '14:00 - 02:00'
 }
+
+let body = document.querySelector('body')
+let rules_button = document.querySelector('.rules_of_build')
+let rules_modal = document.querySelector('.rules_modal')
+
+let review_button = document.querySelector('.review')
+let review_modal = document.querySelector('.review_modal')
+
+rules_button.addEventListener('click', function(){
+    rules_modal.classList.add('active')
+    body.classList.add('modal_open')
+})
+
+rules_modal.addEventListener('click', function(e){
+    if(e.target == rules_modal){
+        rules_modal.classList.remove('active')
+        body.classList.remove('modal_open')
+    }
+})
+
+review_button.addEventListener('click', function(){
+    review_modal.classList.add('active')
+    body.classList.add('modal_open')
+})
+
+review_modal.addEventListener('click', function(e){
+    if(e.target == review_modal){
+        review_modal.classList.remove('active')
+        body.classList.remove('modal_open')
+    }
+})
